@@ -9,9 +9,9 @@ export function HeroSection() {
           muted
           playsInline
           className="w-full h-full object-cover opacity-50"
-          poster="/luxury-sports-car-in-dark-showroom-with-dramatic-l.jpg"
+          poster="/videos/hero-car (1).mp4"
         >
-          <source src="/videos/hero-car.mp4" type="video/mp4" />
+          <source src="/videos/hero-car (1).mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/60 via-transparent to-[var(--color-charcoal)]/80" />
       </div>
