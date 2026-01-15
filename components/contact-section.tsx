@@ -267,16 +267,7 @@ export function ContactSection() {
     <section id="contact" className="py-32 bg-[var(--color-charcoal)] relative">
       <div className="container mx-auto px-6">
         {/* Titre de la section */}
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-5xl md:text-7xl text-[var(--color-cream)] leading-tight mb-6">
-            Parlons de Votre
-            <br />
-            <span className="italic text-[var(--color-orange)]">Projet</span>
-          </h2>
-          {/* <p className="text-[var(--color-gray-200)] text-xl max-w-2xl mx-auto">
-            Notre équipe est à votre écoute pour répondre à toutes vos questions
-          </p> */}
-        </div>
+      
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - Info */}

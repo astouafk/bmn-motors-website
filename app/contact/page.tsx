@@ -47,11 +47,11 @@ export default function ContactPage() {
           {/* <p className="text-[var(--color-orange)] text-sm font-bold mb-6 tracking-widest">
             CONTACTEZ-NOUS
           </p> */}
-          {/* <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[var(--color-cream)] leading-tight mb-8">
+          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[var(--color-cream)] leading-tight mb-8">
             Parlons de Votre
             <br />
             <span className="italic">Projet</span>
-          </h1> */}
+          </h1>
           {/* <p className="text-[var(--color-gray-200)] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
             Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans votre projet automobile.
           </p> */}
