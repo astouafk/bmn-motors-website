@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* New automotive-inspired color palette with dark, cream, and vibrant orange accents */
+  /* Thème SOMBRE (par défaut) - Charcoal, Cream, Orange */
   --background: oklch(0.98 0.005 85);
   --foreground: oklch(0.15 0 0);
   --card: oklch(0.98 0.005 85);
@@ -39,7 +39,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Custom automotive color tokens */
+  /* Custom automotive color tokens - THÈME SOMBRE */
   --color-charcoal: oklch(0.15 0 0);
   --color-cream: oklch(0.98 0.005 85);
   --color-orange: oklch(0.65 0.19 35);
@@ -47,8 +47,44 @@
   --color-gray-50: oklch(0.98 0 0);
   --color-gray-100: oklch(0.95 0 0);
   --color-gray-200: oklch(0.88 0 0);
+  --color-gray-500: oklch(0.5 0 0);
   --color-gray-800: oklch(0.25 0 0);
   --color-gray-900: oklch(0.15 0 0);
+}
+
+/* THÈME CLAIR - Bleu, Blanc, Doré */
+.light {
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.15 0.05 250);
+  --card: oklch(0.99 0 0);
+  --card-foreground: oklch(0.15 0.05 250);
+  --popover: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.15 0.05 250);
+  --primary: oklch(0.45 0.15 250);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.7 0.15 85);
+  --secondary-foreground: oklch(0.15 0.05 250);
+  --muted: oklch(0.95 0 0);
+  --muted-foreground: oklch(0.4 0.05 250);
+  --accent: oklch(0.7 0.15 85);
+  --accent-foreground: oklch(0.15 0.05 250);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0 0);
+  --input: oklch(0.95 0 0);
+  --ring: oklch(0.45 0.15 250);
+
+  /* Custom color tokens - THÈME CLAIR (Bleu, Blanc, Doré) */
+  --color-charcoal: oklch(0.99 0 0); /* Blanc pour le fond */
+  --color-cream: oklch(0.15 0.05 250); /* Bleu foncé pour le texte */
+  --color-orange: oklch(0.7 0.15 85); /* Doré pour l'accent */
+  --color-teal: oklch(0.45 0.15 250); /* Bleu pour les accents secondaires */
+  --color-gray-50: oklch(0.15 0.05 250);
+  --color-gray-100: oklch(0.2 0.05 250);
+  --color-gray-200: oklch(0.3 0.05 250);
+  --color-gray-500: oklch(0.5 0.05 250);
+  --color-gray-800: oklch(0.92 0 0);
+  --color-gray-900: oklch(0.95 0 0);
 }
 
 .dark {
@@ -89,7 +125,6 @@
 @theme inline {
   --font-sans: "Geist", "Geist Fallback";
   --font-mono: "Geist Mono", "Geist Mono Fallback";
-  /* Adding serif font for automotive luxury feel */
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -134,6 +169,7 @@
   --color-gray-50: var(--color-gray-50);
   --color-gray-100: var(--color-gray-100);
   --color-gray-200: var(--color-gray-200);
+  --color-gray-500: var(--color-gray-500);
   --color-gray-800: var(--color-gray-800);
   --color-gray-900: var(--color-gray-900);
 }
@@ -176,8 +212,6 @@
   animation: fade-in 1s ease-out forwards;
 }
 
-
-
 @keyframes shimmer {
   0% {
     transform: translateX(-200%);
@@ -215,8 +249,6 @@
   }
 }
 
-
-
 @keyframes progress {
   0% {
     width: 0%;
@@ -230,9 +262,6 @@
   animation: progress 3s linear;
 }
 
-
-
-/* Animation up-down lente et subtile pour le background */
 @keyframes float-slow {
   0%, 100% {
     transform: translateY(0px);
