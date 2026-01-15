@@ -365,12 +365,12 @@ export function VehicleShowcase() {
 
               {/* Action Buttons avec effets */}
               <div className="space-y-3">
-                <Link
+                {/* <Link
                   href={`/vehicules/${current.slug}`}
                   className="block w-full text-center px-6 py-4 bg-[var(--color-orange)] text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-orange)]/90 hover:scale-105 transition-all duration-300 floating glow-orange"
                 >
                   VOIR LES DÉTAILS
-                </Link>
+                </Link> */}
                 <Link
                   href="/vehicules"
                   className="block w-full text-center px-6 py-4 border-2 border-[var(--color-cream)]/20 text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-cream)] hover:text-[var(--color-charcoal)] transition-all duration-300"
