@@ -1,0 +1,28 @@
+{
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Makhtar Diop",
+        "role": "Dirigeant d'Entreprise",
+        "text": "Le niveau de service est inégalé. De la sélection à la livraison, tout était fluide et professionnel.",
+        "rating": 5,
+        "avatar": null
+      },
+      {
+        "id": 2,
+        "name": "Babacar Fall",
+        "role": "Entrepreneure",
+        "text": "Je loue chez B-M-N depuis des années. La qualité des véhicules et l'attention aux détails me font revenir.",
+        "rating": 5,
+        "avatar": null
+      },
+      {
+        "id": 3,
+        "name": "Awa Guissé",
+        "role": "Réalisateur",
+        "text": "Quand j'ai besoin de véhicules de luxe pour mes productions, B-M-N est mon seul choix. Flotte et service impeccables.",
+        "rating": 5,
+        "avatar": null
+      }
+    ]
+  }

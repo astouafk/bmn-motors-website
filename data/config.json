@@ -1,0 +1,31 @@
+{
+    "contact": {
+      "phone": "+221 77 588 99 76",
+      "phoneRaw": "221775889976",
+      "whatsapp": "221775889976",
+      "email": "bmn-motors@gmail.com",
+      "address": "Dakar, Sénégal",
+      "addressFull": "Dakar, Sénégal"
+    },
+    "social": {
+      "facebook": "https://facebook.com/bmnmotors",
+      "instagram": "https://instagram.com/bmnmotors",
+      "linkedin": "https://linkedin.com/company/bmnmotors"
+    },
+    "business": {
+      "name": "B-M-N Motors",
+      "legalName": "B-M-N Motors Sénégal",
+      "foundedYear": 2021,
+      "owner": {
+        "name": "Birane Michel NDIAYE",
+        "photo": "/owner/bmn-photo.png",
+        "experience": "5+"
+      },
+      "stats": {
+        "vehicles": "50+",
+        "experience": "5",
+        "satisfaction": "99%",
+        "support": "24/7"
+      }
+    }
+  }

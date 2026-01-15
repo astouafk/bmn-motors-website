@@ -1,0 +1,36 @@
+{
+    "rentalCategories": [
+      {
+        "id": "executive-sedans",
+        "name": "BERLINES EXECUTIVES",
+        "description": "Confort premium pour affaires et loisirs",
+        "price": "À partir de 85.000 FCFA/jour",
+        "image": "/luxury-mercedes-s-class-sedan-black.jpg",
+        "vehicles": ["Mercedes Classe S", "BMW Série 7", "Audi A8"]
+      },
+      {
+        "id": "luxury-suvs",
+        "name": "SUV DE LUXE",
+        "description": "Espace et sophistication combinés",
+        "price": "À partir de 95.000 FCFA/jour",
+        "image": "/range-rover-sport-suv-white.jpg",
+        "vehicles": ["Range Rover Sport", "BMW X7", "Mercedes GLS"]
+      },
+      {
+        "id": "sports-performance",
+        "name": "PERFORMANCES SPORTIVES",
+        "description": "Conduite exaltante pour occasions spéciales",
+        "price": "À partir de 120.000 FCFA/jour",
+        "image": "/porsche-cayenne-suv-gray.jpg",
+        "vehicles": ["Porsche Cayenne", "BMW M4", "Mercedes AMG GT"]
+      },
+      {
+        "id": "family-group",
+        "name": "FAMILLE & GROUPE",
+        "description": "Véhicules spacieux pour grands groupes",
+        "price": "À partir de 90.000 FCFA/jour",
+        "image": "/mercedes-v-class-minibus-black.jpg",
+        "vehicles": ["Mercedes Classe V", "Toyota Land Cruiser", "VW Multivan"]
+      }
+    ]
+  }

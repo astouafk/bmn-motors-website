@@ -1,0 +1,54 @@
+{
+    "rentalBenefits": [
+      {
+        "icon": "Shield",
+        "title": "Assurance Complète",
+        "description": "Protection totale incluse dans toutes les locations"
+      },
+      {
+        "icon": "Clock",
+        "title": "Durée Flexible",
+        "description": "Options horaires, journalières, hebdomadaires ou mensuelles"
+      },
+      {
+        "icon": "MapPin",
+        "title": "Livraison & Récupération",
+        "description": "Livraison gratuite dans les limites de la ville"
+      },
+      {
+        "icon": "Calendar",
+        "title": "Réservation Facile",
+        "description": "Réservez en ligne ou via WhatsApp instantanément"
+      }
+    ],
+    "memberBenefits": [
+      "Accès prioritaire aux nouveaux véhicules",
+      "Événements exclusifs réservés aux membres",
+      "Entretien véhicule offert",
+      "Programme de fidélité récompenses",
+      "Service VIP navette aéroport",
+      "Périodes d'essai prolongées"
+    ],
+    "coreValues": [
+      {
+        "icon": "Shield",
+        "title": "QUALITÉ CERTIFIÉE",
+        "description": "Chaque véhicule subit une inspection rigoureuse de 200 points avant la vente"
+      },
+      {
+        "icon": "Award",
+        "title": "SERVICE PREMIUM",
+        "description": "Service de conciergerie haut de gamme pour tous nos clients"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "REPRISE AVANTAGEUSE",
+        "description": "Obtenez la meilleure valeur pour votre véhicule actuel avec notre programme de reprise"
+      },
+      {
+        "icon": "DollarSign",
+        "title": "FINANCEMENT FLEXIBLE",
+        "description": "Solutions de financement personnalisées adaptées à vos besoins"
+      }
+    ]
+  }
