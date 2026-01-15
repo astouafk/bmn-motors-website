@@ -87,19 +87,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const theme = localStorage.getItem('theme') || 'dark';
-                document.documentElement.classList.add(theme);
-              })();
-            `,
-          }}
-        />
-      </head>
+    <html lang="en" className="light">
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
