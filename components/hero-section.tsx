@@ -23,10 +23,10 @@ export function HeroSection() {
         <div className="flex-1 flex items-center justify-center">
           <div className="text-center space-y-4">
             <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl text-[var(--color-cream)] leading-none animate-slide-up">
-              BMN
+            DRIVE
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-orange)] to-[var(--color-cream)] italic">
-                DRIVE TON
+                TON
               </span>
               <br />
               AMBITION
