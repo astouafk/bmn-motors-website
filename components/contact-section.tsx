@@ -275,7 +275,7 @@ export function ContactSection() {
             <h3 className="font-serif text-3xl md:text-4xl text-[var(--color-cream)] mb-8">
               Démarrez Votre
               <br />
-              <span className="italic text-[var(--color-orange)]">Aventure</span>
+              <span className="italic text-[var(--color-orange)]">Aventure!</span>
             </h3>
             <p className="text-[var(--color-gray-200)] text-lg leading-relaxed mb-12">
               Que vous cherchiez à acheter, louer ou simplement explorer notre collection, notre équipe est prête à vous
