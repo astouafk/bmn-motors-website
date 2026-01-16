@@ -738,7 +738,7 @@ function VehiculesPage() {
     transmission: filters.transmission !== "All" ? filters.transmission : undefined,
     fuel: filters.fuel !== "All" ? filters.fuel : undefined,
     seats: filters.seats !== "All" ? Number.parseInt(filters.seats) : undefined,
-    availability: filters.availability !== "All" ? (filters.availability.toLowerCase() as "available" | "unavailable") : undefined,
+    availability: filters.availability !== "All" ? (filters.availability.toLowerCase() as "disponible" | "indisponible") : undefined,
   })
 
   // Calcul de la pagination
@@ -779,7 +779,7 @@ function VehiculesPage() {
           Notre Flotte<span className="text-[var(--color-orange)]">.</span>
         </h1>
         <p className="text-[var(--color-gray-200)] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-          Découvrez notre collection premium de véhicules disponibles à la vente et à la location. Chaque véhicule
+          Découvrez notre incroyable collection de véhicules disponibles à la vente et à la location. Chaque véhicule
           est méticuleusement entretenu pour garantir votre confort et votre sécurité.
         </p>
       </div>
@@ -819,7 +819,7 @@ function VehiculesPage() {
                     onChange={(e) => handleFilterChange({ ...filters, type: e.target.value })}
                     className="w-full px-4 py-3 bg-[var(--color-charcoal)] text-[var(--color-cream)] border border-[var(--color-gray-800)] rounded-lg focus:outline-none focus:border-[var(--color-orange)] transition-all"
                   >
-                    <option>All</option>
+                    <option>Tout</option>
                     {vehicleTypes.map((type) => (
                       <option key={type}>{type}</option>
                     ))}
@@ -834,9 +834,9 @@ function VehiculesPage() {
                     onChange={(e) => handleFilterChange({ ...filters, transmission: e.target.value })}
                     className="w-full px-4 py-3 bg-[var(--color-charcoal)] text-[var(--color-cream)] border border-[var(--color-gray-800)] rounded-lg focus:outline-none focus:border-[var(--color-orange)] transition-all"
                   >
-                    <option>All</option>
-                    <option>Automatic</option>
-                    <option>Manual</option>
+                    <option>Tout</option>
+                    <option>Automatique</option>
+                    <option>Manuelle</option>
                   </select>
                 </div>
 
@@ -848,10 +848,10 @@ function VehiculesPage() {
                     onChange={(e) => handleFilterChange({ ...filters, fuel: e.target.value })}
                     className="w-full px-4 py-3 bg-[var(--color-charcoal)] text-[var(--color-cream)] border border-[var(--color-gray-800)] rounded-lg focus:outline-none focus:border-[var(--color-orange)] transition-all"
                   >
-                    <option>All</option>
-                    <option>Petrol</option>
+                    <option>Tout</option>
+                    <option>Pétrole</option>
                     <option>Diesel</option>
-                    <option>Hybrid</option>
+                    <option>Hybride</option>
                   </select>
                 </div>
 
@@ -863,7 +863,7 @@ function VehiculesPage() {
                     onChange={(e) => handleFilterChange({ ...filters, seats: e.target.value })}
                     className="w-full px-4 py-3 bg-[var(--color-charcoal)] text-[var(--color-cream)] border border-[var(--color-gray-800)] rounded-lg focus:outline-none focus:border-[var(--color-orange)] transition-all"
                   >
-                    <option>All</option>
+                    <option>Tout</option>
                     <option>5</option>
                     <option>7</option>
                     <option>8</option>
@@ -878,9 +878,9 @@ function VehiculesPage() {
                     onChange={(e) => handleFilterChange({ ...filters, availability: e.target.value })}
                     className="w-full px-4 py-3 bg-[var(--color-charcoal)] text-[var(--color-cream)] border border-[var(--color-gray-800)] rounded-lg focus:outline-none focus:border-[var(--color-orange)] transition-all"
                   >
-                    <option>All</option>
-                    <option>Available</option>
-                    <option>Unavailable</option>
+                    <option>Tout</option>
+                    <option>Disponible</option>
+                    <option>Indisponible</option>
                   </select>
                 </div>
               </div>
@@ -910,9 +910,19 @@ function VehiculesPage() {
                   )}
                 </div>
                 <div className="p-6">
-                  <p className="text-[var(--color-orange)] text-sm font-semibold mb-2 uppercase tracking-wider">
-                    {vehicle.type}
-                  </p>
+                <div className="mb-2 flex items-center justify-between gap-3">
+                {/* Type */}
+                <p className="text-[var(--color-orange)] text-sm font-semibold uppercase tracking-wider">
+                  {vehicle.type}
+                </p>
+
+                {/* Prix de vente */}
+                {vehicle.sale?.available && (
+                  <span className="text-sm font-bold text-yellow-400 whitespace-nowrap">
+                    {formatPrice(vehicle.sale.price)}
+                  </span>
+                )}
+              </div>
                   <h3 className="font-serif text-2xl font-bold text-[var(--color-cream)] mb-2">{vehicle.name}</h3>
                   <div className="flex gap-4 text-sm text-[var(--color-cream)]/60 mb-4">
                     <span>{vehicle.year}</span>

@@ -326,15 +326,11 @@ export default function RentalsPage() {
             <span className="italic">Rêves</span>
           </h1>
           <p className="text-[var(--color-gray-200)] text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed mb-12">
-            Vivez le luxe à vos conditions. Locations flexibles pour toutes les occasions.
+            Vivez le luxe en fonction de vos moyens. Locations flexibles pour toutes les occasions.
           </p>
-          <Link
-            href="#categories"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-orange)] text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-orange)]/90 transition-all"
-          >
-            EXPLORER LA FLOTTE
-            <ArrowRight className="w-5 h-5" />
-          </Link>
+          <div className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-orange)] text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-orange)]/90 transition-all">
+            Locations & Vente de Voitures à Dakar
+          </div>
         </div>
       </section>
 
@@ -346,7 +342,7 @@ export default function RentalsPage() {
               Pourquoi Louer <span className="italic">Avec Nous</span>
             </h2>
             <p className="text-[var(--color-gray-500)] text-xl max-w-2xl mx-auto">
-              Nous rendons le luxe accessible avec des tarifs transparents et un service exceptionnel
+              Nous rendons la qualité accessible avec des tarifs transparents et un service exceptionnel
             </p>
           </div>
 
@@ -437,7 +433,7 @@ export default function RentalsPage() {
               </div>
               <h3 className="text-[var(--color-charcoal)] text-2xl font-bold mb-4">Réserver & Payer</h3>
               <p className="text-[var(--color-gray-500)] leading-relaxed">
-                Réservez instantanément en ligne avec paiement sécurisé
+                Votre choix est fait ? Contactez-nous pour la validation
               </p>
             </div>
 

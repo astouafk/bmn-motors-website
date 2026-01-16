@@ -1,346 +1,393 @@
 {
-    "vehicles": [
-      {
-        "id": "mercedes-s-class-2024",
-        "slug": "mercedes-s-class-2024",
-        "name": "Mercedes-Benz S-Class",
-        "type": "Sedan",
-        "year": 2024,
-        "pricePerDay": 85000,
-        "securityDeposit": 500000,
-        "image": "/luxury-mercedes-s-class-sedan-black.jpg",
-        "gallery": [
-          "/luxury-mercedes-s-class-sedan-black-showroom.jpg",
-          "/mercedes-s-class-interior-dashboard.jpg",
-          "/luxury-mercedes-s-class-sedan-black.jpg",
-          "/luxury-mercedes-s-class-sedan-black-showroom.jpg"
-        ],
-        "specs": {
-          "transmission": "Automatic",
-          "fuel": "Petrol",
-          "seats": 5,
-          "fuelConsumption": "8.5 L/100km"
-        },
-        "features": [
-          "Caméra de recul",
-          "Bluetooth",
-          "Climatisation",
-          "Toit panoramique",
-          "Intérieur cuir",
-          "Système de navigation",
-          "Régulateur adaptatif",
-          "Sièges chauffants"
-        ],
-        "availability": {
-          "available": true,
-          "withDriver": true,
-          "withoutDriver": true
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile"
-        ],
-        "featured": true,
-        "order": 1
+  "vehicles": [
+    {
+      "id": "mercedes-s-class-2024",
+      "slug": "mercedes-s-class-2024",
+      "name": "Mercedes-Benz S-Class",
+      "type": "Sedan",
+      "year": 2024,
+      "pricePerDay": 85000,
+      "securityDeposit": 500000,
+      "sale": {
+        "price": 10000000,
+        "currency": "FCFA",
+        "available": true
       },
-      {
-        "id": "range-rover-sport-2024",
-        "slug": "range-rover-sport-2024",
-        "name": "Range Rover Sport",
-        "type": "SUV",
-        "year": 2024,
-        "pricePerDay": 95000,
-        "securityDeposit": 600000,
-        "image": "/range-rover-sport-suv-white.jpg",
-        "gallery": [
-          "/range-rover-sport-suv-white.jpg",
-          "/range-rover-sport-suv-white-showroom.jpg",
-          "/range-rover-sport-suv-white.jpg",
-          "/range-rover-sport-suv-white-showroom.jpg"
-        ],
-        "specs": {
-          "transmission": "Automatic",
-          "fuel": "Diesel",
-          "seats": 7,
-          "fuelConsumption": "9.2 L/100km"
-        },
-        "features": [
-          "Caméra de recul",
-          "Bluetooth",
-          "Climatisation",
-          "Toit panoramique",
-          "Intérieur cuir",
-          "Système 4x4",
-          "Capteurs de stationnement",
-          "Système audio premium"
-        ],
-        "availability": {
-          "available": true,
-          "withDriver": true,
-          "withoutDriver": true
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile",
-          "Minimum 3 ans d'expérience de conduite"
-        ],
-        "featured": true,
-        "order": 2
+      "image": "/luxury-mercedes-s-class-sedan-black.jpg",
+      "gallery": [
+        "/luxury-mercedes-s-class-sedan-black-showroom.jpg",
+        "/mercedes-s-class-interior-dashboard.jpg",
+        "/luxury-mercedes-s-class-sedan-black.jpg",
+        "/luxury-mercedes-s-class-sedan-black-showroom.jpg"
+      ],
+      "specs": {
+        "transmission": "Automatique",
+        "fuel": "Pétrole",
+        "seats": 5,
+        "fuelConsumption": "8.5 L/100km"
       },
-      {
-        "id": "bmw-x5-2023",
-        "slug": "bmw-x5-2023",
-        "name": "BMW X5",
-        "type": "SUV",
-        "year": 2023,
-        "pricePerDay": 75000,
-        "securityDeposit": 450000,
-        "image": "/bmw-x5-suv-silver.jpg",
-        "gallery": [
-          "/bmw-x5-suv-silver.jpg",
-          "/bmw-x5-suv-silver.jpg",
-          "/bmw-x5-suv-silver.jpg",
-          "/bmw-x5-suv-silver.jpg"
-        ],
-        "specs": {
-          "transmission": "Automatic",
-          "fuel": "Hybrid",
-          "seats": 5,
-          "fuelConsumption": "8.8 L/100km"
-        },
-        "features": [
-          "Caméra de recul",
-          "Bluetooth",
-          "Climatisation",
-          "Intérieur cuir",
-          "Système de navigation",
-          "Capteurs de stationnement"
-        ],
-        "availability": {
-          "available": false,
-          "withDriver": true,
-          "withoutDriver": true
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile"
-        ],
-        "featured": false,
-        "order": 3
+      "features": [
+        "Caméra de recul",
+        "Bluetooth",
+        "Climatisation",
+        "Toit panoramique",
+        "Intérieur cuir",
+        "Système de navigation",
+        "Régulateur adaptatif",
+        "Sièges chauffants"
+      ],
+      "availability": {
+        "available": true,
+        "withDriver": true,
+        "withoutDriver": true
       },
-      {
-        "id": "audi-a6-2024",
-        "slug": "audi-a6-2024",
-        "name": "Audi A6",
-        "type": "Sedan",
-        "year": 2024,
-        "pricePerDay": 65000,
-        "securityDeposit": 400000,
-        "image": "/audi-a6-sedan-blue.jpg",
-        "gallery": [
-          "/audi-a6-sedan-blue.jpg",
-          "/audi-a6-sedan-blue.jpg",
-          "/audi-a6-sedan-blue.jpg",
-          "/audi-a6-sedan-blue.jpg"
-        ],
-        "specs": {
-          "transmission": "Automatic",
-          "fuel": "Petrol",
-          "seats": 5,
-          "fuelConsumption": "7.8 L/100km"
-        },
-        "features": [
-          "Caméra de recul",
-          "Bluetooth",
-          "Climatisation",
-          "Intérieur cuir",
-          "Système de navigation",
-          "Régulateur adaptatif"
-        ],
-        "availability": {
-          "available": true,
-          "withDriver": true,
-          "withoutDriver": true
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile"
-        ],
-        "featured": false,
-        "order": 4
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile"
+      ],
+      "featured": true,
+      "order": 1
+    },
+
+    {
+      "id": "range-rover-sport-2024",
+      "slug": "range-rover-sport-2024",
+      "name": "Range Rover Sport",
+      "type": "SUV",
+      "year": 2024,
+      "pricePerDay": 95000,
+      "securityDeposit": 600000,
+      "sale": {
+        "price": 9000000,
+        "currency": "FCFA",
+        "available": true
       },
-      {
-        "id": "toyota-land-cruiser-2024",
-        "slug": "toyota-land-cruiser-2024",
-        "name": "Toyota Land Cruiser",
-        "type": "4x4",
-        "year": 2024,
-        "pricePerDay": 90000,
-        "securityDeposit": 550000,
-        "image": "/toyota-land-cruiser-4x4-white.jpg",
-        "gallery": [
-          "/toyota-land-cruiser-4x4-white.jpg",
-          "/toyota-land-cruiser-4x4-white.jpg",
-          "/toyota-land-cruiser-4x4-white.jpg",
-          "/toyota-land-cruiser-4x4-white.jpg"
-        ],
-        "specs": {
-          "transmission": "Automatic",
-          "fuel": "Diesel",
-          "seats": 7,
-          "fuelConsumption": "11.5 L/100km"
-        },
-        "features": [
-          "Caméra de recul",
-          "Bluetooth",
-          "Climatisation",
-          "Intérieur cuir",
-          "Système 4x4",
-          "Mode tout-terrain",
-          "Contrôle descente de pente"
-        ],
-        "availability": {
-          "available": true,
-          "withDriver": true,
-          "withoutDriver": true
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile",
-          "Minimum 5 ans d'expérience de conduite"
-        ],
-        "featured": true,
-        "order": 5
+      "image": "/range-rover-sport-suv-white.jpg",
+      "gallery": [
+        "/range-rover-sport-suv-white.jpg",
+        "/range-rover-sport-suv-white-showroom.jpg",
+        "/range-rover-sport-suv-white.jpg",
+        "/range-rover-sport-suv-white-showroom.jpg"
+      ],
+      "specs": {
+        "transmission": "Automatique",
+        "fuel": "Diesel",
+        "seats": 7,
+        "fuelConsumption": "9.2 L/100km"
       },
-      {
-        "id": "volkswagen-polo-2023",
-        "slug": "volkswagen-polo-2023",
-        "name": "Volkswagen Polo",
-        "type": "City Car",
-        "year": 2023,
-        "pricePerDay": 35000,
-        "securityDeposit": 200000,
-        "image": "/volkswagen-polo-city-car-red.jpg",
-        "gallery": [
-          "/volkswagen-polo-city-car-red.jpg",
-          "/volkswagen-polo-city-car-red.jpg",
-          "/volkswagen-polo-city-car-red.jpg",
-          "/volkswagen-polo-city-car-red.jpg"
-        ],
-        "specs": {
-          "transmission": "Manual",
-          "fuel": "Petrol",
-          "seats": 5,
-          "fuelConsumption": "5.5 L/100km"
-        },
-        "features": [
-          "Caméra de recul",
-          "Bluetooth",
-          "Climatisation",
-          "Ports USB"
-        ],
-        "availability": {
-          "available": true,
-          "withDriver": false,
-          "withoutDriver": true
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile"
-        ],
-        "featured": false,
-        "order": 6
+      "features": [
+        "Caméra de recul",
+        "Bluetooth",
+        "Climatisation",
+        "Toit panoramique",
+        "Intérieur cuir",
+        "Système 4x4",
+        "Capteurs de stationnement",
+        "Système audio premium"
+      ],
+      "availability": {
+        "available": true,
+        "withDriver": true,
+        "withoutDriver": true
       },
-      {
-        "id": "mercedes-v-class-2024",
-        "slug": "mercedes-v-class-2024",
-        "name": "Mercedes V-Class",
-        "type": "Minibus / 7-Seater",
-        "year": 2024,
-        "pricePerDay": 100000,
-        "securityDeposit": 600000,
-        "image": "/mercedes-v-class-minibus-black.jpg",
-        "gallery": [
-          "/mercedes-v-class-minibus-black.jpg",
-          "/mercedes-v-class-minibus-black.jpg",
-          "/mercedes-v-class-minibus-black.jpg",
-          "/mercedes-v-class-minibus-black.jpg"
-        ],
-        "specs": {
-          "transmission": "Automatic",
-          "fuel": "Diesel",
-          "seats": 8,
-          "fuelConsumption": "9.5 L/100km"
-        },
-        "features": [
-          "Caméra de recul",
-          "Bluetooth",
-          "Climatisation",
-          "Intérieur cuir",
-          "Portes coulissantes électriques",
-          "Système audio premium"
-        ],
-        "availability": {
-          "available": false,
-          "withDriver": true,
-          "withoutDriver": false
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile",
-          "Permis de conduire commercial"
-        ],
-        "featured": false,
-        "order": 7
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile",
+        "Minimum 3 ans d'expérience de conduite"
+      ],
+      "featured": true,
+      "order": 2
+    },
+
+    {
+      "id": "bmw-x5-2023",
+      "slug": "bmw-x5-2023",
+      "name": "BMW X5",
+      "type": "SUV",
+      "year": 2023,
+      "pricePerDay": 75000,
+      "securityDeposit": 450000,
+      "sale": {
+        "price": 7500000,
+        "currency": "FCFA",
+        "available": false
       },
-      {
-        "id": "porsche-cayenne-2024",
-        "slug": "porsche-cayenne-2024",
-        "name": "Porsche Cayenne",
-        "type": "SUV",
-        "year": 2024,
-        "pricePerDay": 120000,
-        "securityDeposit": 700000,
-        "image": "/porsche-cayenne-suv-gray.jpg",
-        "gallery": [
-          "/porsche-cayenne-suv-gray.jpg",
-          "/porsche-cayenne-suv-gray.jpg",
-          "/porsche-cayenne-suv-gray.jpg",
-          "/porsche-cayenne-suv-gray.jpg"
-        ],
-        "specs": {
-          "transmission": "Automatic",
-          "fuel": "Hybrid",
-          "seats": 5,
-          "fuelConsumption": "9.0 L/100km"
-        },
-        "features": [
-          "Performances sportives",
-          "Luxe premium",
-          "Hybride",
-          "Caméra de recul",
-          "Système de navigation",
-          "Toit panoramique"
-        ],
-        "availability": {
-          "available": true,
-          "withDriver": true,
-          "withoutDriver": true
-        },
-        "documents": [
-          "Permis de conduire valide",
-          "Carte d'identité ou Passeport",
-          "Justificatif de domicile"
-        ],
-        "featured": false,
-        "order": 8
-      }
-    ]
-  }
+      "image": "/bmw-x5-suv-silver.jpg",
+      "gallery": [
+        "/bmw-x5-suv-silver.jpg",
+        "/bmw-x5-suv-silver.jpg",
+        "/bmw-x5-suv-silver.jpg",
+        "/bmw-x5-suv-silver.jpg"
+      ],
+      "specs": {
+        "transmission": "Automatique",
+        "fuel": "Hybride",
+        "seats": 5,
+        "fuelConsumption": "8.8 L/100km"
+      },
+      "features": [
+        "Caméra de recul",
+        "Bluetooth",
+        "Climatisation",
+        "Intérieur cuir",
+        "Système de navigation",
+        "Capteurs de stationnement"
+      ],
+      "availability": {
+        "available": false,
+        "withDriver": true,
+        "withoutDriver": true
+      },
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile"
+      ],
+      "featured": false,
+      "order": 3
+    },
+
+    {
+      "id": "audi-a6-2024",
+      "slug": "audi-a6-2024",
+      "name": "Audi A6",
+      "type": "Sedan",
+      "year": 2024,
+      "pricePerDay": 65000,
+      "securityDeposit": 400000,
+      "sale": {
+        "price": 6500000,
+        "currency": "FCFA",
+        "available": true
+      },
+      "image": "/audi-a6-sedan-blue.jpg",
+      "gallery": [
+        "/audi-a6-sedan-blue.jpg",
+        "/audi-a6-sedan-blue.jpg",
+        "/audi-a6-sedan-blue.jpg",
+        "/audi-a6-sedan-blue.jpg"
+      ],
+      "specs": {
+        "transmission": "Automatique",
+        "fuel": "Pétrole",
+        "seats": 5,
+        "fuelConsumption": "7.8 L/100km"
+      },
+      "features": [
+        "Caméra de recul",
+        "Bluetooth",
+        "Climatisation",
+        "Intérieur cuir",
+        "Système de navigation",
+        "Régulateur adaptatif"
+      ],
+      "availability": {
+        "available": true,
+        "withDriver": true,
+        "withoutDriver": true
+      },
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile"
+      ],
+      "featured": false,
+      "order": 4
+    },
+
+    {
+      "id": "toyota-land-cruiser-2024",
+      "slug": "toyota-land-cruiser-2024",
+      "name": "Toyota Land Cruiser",
+      "type": "4x4",
+      "year": 2024,
+      "pricePerDay": 90000,
+      "securityDeposit": 550000,
+      "sale": {
+        "price": 8500000,
+        "currency": "FCFA",
+        "available": true
+      },
+      "image": "/toyota-land-cruiser-4x4-white.jpg",
+      "gallery": [
+        "/toyota-land-cruiser-4x4-white.jpg",
+        "/toyota-land-cruiser-4x4-white.jpg",
+        "/toyota-land-cruiser-4x4-white.jpg",
+        "/toyota-land-cruiser-4x4-white.jpg"
+      ],
+      "specs": {
+        "transmission": "Automatique",
+        "fuel": "Diesel",
+        "seats": 7,
+        "fuelConsumption": "11.5 L/100km"
+      },
+      "features": [
+        "Caméra de recul",
+        "Bluetooth",
+        "Climatisation",
+        "Intérieur cuir",
+        "Système 4x4",
+        "Mode tout-terrain",
+        "Contrôle descente de pente"
+      ],
+      "availability": {
+        "available": true,
+        "withDriver": true,
+        "withoutDriver": true
+      },
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile",
+        "Minimum 5 ans d'expérience de conduite"
+      ],
+      "featured": true,
+      "order": 5
+    },
+
+    {
+      "id": "volkswagen-polo-2023",
+      "slug": "volkswagen-polo-2023",
+      "name": "Volkswagen Polo",
+      "type": "City Car",
+      "year": 2023,
+      "pricePerDay": 35000,
+      "securityDeposit": 200000,
+      "sale": {
+        "price": 1500000,
+        "currency": "FCFA",
+        "available": true
+      },
+      "image": "/volkswagen-polo-city-car-red.jpg",
+      "gallery": [
+        "/volkswagen-polo-city-car-red.jpg",
+        "/volkswagen-polo-city-car-red.jpg",
+        "/volkswagen-polo-city-car-red.jpg",
+        "/volkswagen-polo-city-car-red.jpg"
+      ],
+      "specs": {
+        "transmission": "Manuelle",
+        "fuel": "Pétrole",
+        "seats": 5,
+        "fuelConsumption": "5.5 L/100km"
+      },
+      "features": [
+        "Caméra de recul",
+        "Bluetooth",
+        "Climatisation",
+        "Ports USB"
+      ],
+      "availability": {
+        "available": true,
+        "withDriver": false,
+        "withoutDriver": true
+      },
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile"
+      ],
+      "featured": false,
+      "order": 6
+    },
+
+    {
+      "id": "mercedes-v-class-2024",
+      "slug": "mercedes-v-class-2024",
+      "name": "Mercedes V-Class",
+      "type": "Minibus / 7-Seater",
+      "year": 2024,
+      "pricePerDay": 100000,
+      "securityDeposit": 600000,
+      "sale": {
+        "price": 8000000,
+        "currency": "FCFA",
+        "available": false
+      },
+      "image": "/mercedes-v-class-minibus-black.jpg",
+      "gallery": [
+        "/mercedes-v-class-minibus-black.jpg",
+        "/mercedes-v-class-minibus-black.jpg",
+        "/mercedes-v-class-minibus-black.jpg",
+        "/mercedes-v-class-minibus-black.jpg"
+      ],
+      "specs": {
+        "transmission": "Automatique",
+        "fuel": "Diesel",
+        "seats": 8,
+        "fuelConsumption": "9.5 L/100km"
+      },
+      "features": [
+        "Caméra de recul",
+        "Bluetooth",
+        "Climatisation",
+        "Intérieur cuir",
+        "Portes coulissantes électriques",
+        "Système audio premium"
+      ],
+      "availability": {
+        "available": false,
+        "withDriver": true,
+        "withoutDriver": false
+      },
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile",
+        "Permis de conduire commercial"
+      ],
+      "featured": false,
+      "order": 7
+    },
+
+    {
+      "id": "porsche-cayenne-2024",
+      "slug": "porsche-cayenne-2024",
+      "name": "Porsche Cayenne",
+      "type": "SUV",
+      "year": 2024,
+      "pricePerDay": 120000,
+      "securityDeposit": 700000,
+      "sale": {
+        "price": 9500000,
+        "currency": "FCFA",
+        "available": true
+      },
+      "image": "/porsche-cayenne-suv-gray.jpg",
+      "gallery": [
+        "/porsche-cayenne-suv-gray.jpg",
+        "/porsche-cayenne-suv-gray.jpg",
+        "/porsche-cayenne-suv-gray.jpg",
+        "/porsche-cayenne-suv-gray.jpg"
+      ],
+      "specs": {
+        "transmission": "Automatique",
+        "fuel": "Hybride",
+        "seats": 5,
+        "fuelConsumption": "9.0 L/100km"
+      },
+      "features": [
+        "Performances sportives",
+        "Luxe premium",
+        "Hybride",
+        "Caméra de recul",
+        "Système de navigation",
+        "Toit panoramique"
+      ],
+      "availability": {
+        "available": true,
+        "withDriver": true,
+        "withoutDriver": true
+      },
+      "documents": [
+        "Permis de conduire valide",
+        "Carte d'identité ou Passeport",
+        "Justificatif de domicile"
+      ],
+      "featured": false,
+      "order": 8
+    }
+  ]
+}

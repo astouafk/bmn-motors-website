@@ -159,8 +159,13 @@ export function Navigation() {
 
   return (
     <nav
+      // className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      //   isScrolled ? "bg-[var(--color-charcoal)]/95 backdrop-blur-md" : "bg-transparent"
+      // }`}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[var(--color-charcoal)]/95 backdrop-blur-md" : "bg-transparent"
+        isScrolled || isMobileMenuOpen 
+          ? "bg-[var(--color-charcoal)]/95 backdrop-blur-md" 
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 py-4">

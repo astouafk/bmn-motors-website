@@ -18,7 +18,7 @@
       {
         "icon": "Calendar",
         "title": "Réservation Facile",
-        "description": "Réservez en ligne ou via WhatsApp instantanément"
+        "description": "Réservez votre voiture via WhatsApp instantanément"
       }
     ],
     "memberBenefits": [
@@ -38,7 +38,7 @@
       {
         "icon": "Award",
         "title": "SERVICE PREMIUM",
-        "description": "Service de conciergerie haut de gamme pour tous nos clients"
+        "description": "Service dynamique haut de gamme pour tous nos clients"
       },
       {
         "icon": "TrendingUp",
@@ -46,9 +46,9 @@
         "description": "Obtenez la meilleure valeur pour votre véhicule actuel avec notre programme de reprise"
       },
       {
-        "icon": "DollarSign",
-        "title": "FINANCEMENT FLEXIBLE",
-        "description": "Solutions de financement personnalisées adaptées à vos besoins"
+        "icon": "Wallet",
+        "title": "PAIEMENT FLEXIBLE",
+        "description": "Solutions de paiement personnalisées adaptées à vos moyens"
       }
     ]
   }

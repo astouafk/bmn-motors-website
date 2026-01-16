@@ -48,10 +48,13 @@ export default function ContactPage() {
             CONTACTEZ-NOUS
           </p> */}
           <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[var(--color-cream)] leading-tight mb-8">
-            Parlons de Votre
+          Parlons de Votre
             <br />
             <span className="italic">Projet</span>
           </h1>
+          <div className="mt-6 inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-orange)] text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-orange)]/90 transition-all">
+            Nous sommes à votre disposition
+          </div>
           {/* <p className="text-[var(--color-gray-200)] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
             Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans votre projet automobile.
           </p> */}

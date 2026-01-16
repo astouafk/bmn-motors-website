@@ -330,14 +330,36 @@ export function VehicleDetails({ vehicle }: VehicleDetailsProps) {
 
             {/* Price */}
             <div className="mb-8 p-6 bg-[var(--color-gray-900)] rounded-2xl border border-[var(--color-gray-800)]">
-              <p className="text-sm text-[var(--color-cream)]/60 mb-2">Prix par Jour</p>
-              <p className="font-serif text-4xl font-bold text-[var(--color-orange)]">
-                {formatPrice(vehicle.pricePerDay)}
-              </p>
-              <p className="text-sm text-[var(--color-cream)]/60 mt-4">
-                Caution : {formatPrice(vehicle.securityDeposit)}
-              </p>
-            </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    {/* Prix de vente */}
+    {vehicle.sale?.available && (
+      <div className="text-left">
+        <p className="text-sm text-[var(--color-cream)]/60 mb-2">
+          Prix de vente
+        </p>
+        <p className="font-serif text-4xl font-bold text-yellow-400">
+          {formatPrice(vehicle.sale.price)}
+        </p>
+      </div>
+    )}
+
+    {/* Prix par jour */}
+    <div className="text-left sm:text-right">
+      <p className="text-sm text-[var(--color-cream)]/60 mb-2">
+        Prix par jour
+      </p>
+      <p className="font-serif text-4xl font-bold text-[var(--color-orange)]">
+        {formatPrice(vehicle.pricePerDay)}
+      </p>
+    </div>
+  </div>
+
+  {/* Caution */}
+  <p className="text-sm text-[var(--color-cream)]/60 mt-6 text-center">
+    Caution : {formatPrice(vehicle.securityDeposit)}
+  </p>
+</div>
+
 
             {/* Main Information */}
             <div className="mb-8">

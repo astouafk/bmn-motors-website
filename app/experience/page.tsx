@@ -247,15 +247,18 @@ export default function ExperiencePage() {
         <div className="relative z-10 container mx-auto px-6 text-center">
           <p className="text-[var(--color-orange)] text-sm font-bold mb-6 tracking-widest">LA DIFFÉRENCE B-M-N</p>
           <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[var(--color-cream)] leading-tight mb-8">
-            <span className="italic">Redéfinir</span>
-            <br />
+            {/* <span className="italic">Redéfinir</span>
+            <br /> */}
             LE LUXE
             <br />
             AUTOMOBILE
           </h1>
-          <p className="text-[var(--color-gray-200)] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+          <p className="text-[var(--color-gray-200)] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-6">
             Nous ne vendons pas simplement des voitures. Nous créons des expériences qui élèvent votre voyage.
           </p>
+          <div className="mt-6 inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-orange)] text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-orange)]/90 transition-all">
+            Un bon rapport qualité / prix
+          </div>
         </div>
       </section>
 
@@ -360,9 +363,10 @@ export default function ExperiencePage() {
                 </div>
 
                 <p className="text-[var(--color-gray-500)] text-lg leading-relaxed mb-8 italic">"{testimonial.text}"</p>
-
                 <div>
-                  <p className="text-[var(--color-charcoal)] font-bold text-lg">{testimonial.name}</p>
+                  <p className="text-[var(--color-gray-400)] text-sm">{testimonial.name}</p>
+                </div>        
+                <div>
                   <p className="text-[var(--color-gray-400)] text-sm">{testimonial.role}</p>
                 </div>
               </div>
@@ -390,7 +394,7 @@ export default function ExperiencePage() {
                 <span className="italic">L'Excellence</span>
               </h2>
               <p className="text-[var(--color-gray-200)] text-xl leading-relaxed mb-12">
-                Rejoignez des milliers de clients satisfaits qui nous font confiance pour leurs besoins automobiles. Que
+                Rejoignez des centaines de clients satisfaits qui nous font confiance pour leurs besoins automobiles. Que
                 vous cherchiez à acheter, louer ou simplement explorer, nous sommes là pour dépasser vos attentes.
               </p>
 

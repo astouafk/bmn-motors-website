@@ -253,7 +253,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-[var(--color-cream)]/10 text-center">
-          <p className="text-[var(--color-gray-200)] text-sm">
+          <p className="text-[var(--color-gray-200)] text-sm"> AFK
             © {new Date().getFullYear()} {config.business.name}. Tous droits réservés.
           </p>
         </div>

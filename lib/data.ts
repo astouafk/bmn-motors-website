@@ -16,6 +16,13 @@ export interface Vehicle {
   year: number
   pricePerDay: number
   securityDeposit: number
+
+  sale?: {
+    price: number
+    currency: string
+    available: boolean
+  }
+
   image: string
   gallery: string[]
   specs: {
@@ -142,11 +149,11 @@ export function filterVehicles(filters: {
   transmission?: string
   fuel?: string
   seats?: number
-  availability?: 'available' | 'unavailable'
+  availability?: 'disponible' | 'indisponible'
 }): Vehicle[] {
   let filtered = getAllVehicles()
 
-  if (filters.type && filters.type !== 'All') {
+  if (filters.type && filters.type !== 'Tout') {
     filtered = filtered.filter((v) => v.type === filters.type)
   }
 
@@ -158,11 +165,11 @@ export function filterVehicles(filters: {
     filtered = filtered.filter((v) => v.pricePerDay <= filters.maxPrice!)
   }
 
-  if (filters.transmission && filters.transmission !== 'All') {
+  if (filters.transmission && filters.transmission !== 'Tout') {
     filtered = filtered.filter((v) => v.specs.transmission === filters.transmission)
   }
 
-  if (filters.fuel && filters.fuel !== 'All') {
+  if (filters.fuel && filters.fuel !== 'Tout') {
     filtered = filtered.filter((v) => v.specs.fuel === filters.fuel)
   }
 
@@ -170,9 +177,9 @@ export function filterVehicles(filters: {
     filtered = filtered.filter((v) => v.specs.seats === filters.seats)
   }
 
-  if (filters.availability === 'available') {
+  if (filters.availability === 'disponible') {
     filtered = filtered.filter((v) => v.availability.available)
-  } else if (filters.availability === 'unavailable') {
+  } else if (filters.availability === 'indisponible') {
     filtered = filtered.filter((v) => !v.availability.available)
   }
 

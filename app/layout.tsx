@@ -31,13 +31,40 @@
 //   },
 // }
 
+// // export default function RootLayout({
+// //   children,
+// // }: Readonly<{
+// //   children: React.ReactNode
+// // }>) {
+// //   return (
+// //     <html lang="en" className="light">
+// //       <body className={`font-sans antialiased`}>
+// //         {children}
+// //         <Analytics />
+// //       </body>
+// //     </html>
+// //   )
+// // }
+
 // export default function RootLayout({
 //   children,
 // }: Readonly<{
 //   children: React.ReactNode
 // }>) {
 //   return (
-//     <html lang="en">
+//     <html lang="en" suppressHydrationWarning>
+//       <head>
+//         <script
+//           dangerouslySetInnerHTML={{
+//             __html: `
+//               try {
+//                 const theme = localStorage.getItem('theme') || 'light';
+//                 document.documentElement.classList.add(theme);
+//               } catch (e) {}
+//             `,
+//           }}
+//         />
+//       </head>
 //       <body className={`font-sans antialiased`}>
 //         {children}
 //         <Analytics />
@@ -52,6 +79,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { PageTransition } from "@/components/page-transition"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -87,9 +115,23 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="light">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme') || 'light';
+                document.documentElement.classList.add(theme);
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
       <body className={`font-sans antialiased`}>
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
         <Analytics />
       </body>
     </html>

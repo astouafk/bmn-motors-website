@@ -138,7 +138,7 @@
 
 
 
-import { Shield, Award, TrendingUp, DollarSign } from "lucide-react"
+import { Shield, Award, TrendingUp, Wallet } from "lucide-react"
 import { getCoreValues, getStats } from "@/lib/data"
 
 export function ExperienceSection() {
@@ -180,6 +180,7 @@ export function ExperienceSection() {
           </p>
         </div>
 
+
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {advantages.map((advantage, index) => {
@@ -188,7 +189,7 @@ export function ExperienceSection() {
               Shield,
               Award,
               TrendingUp,
-              DollarSign,
+              Wallet,
             }
             const Icon = iconMap[advantage.icon] || Shield
 

@@ -120,13 +120,13 @@ const values = [
     tag: "VISION",
     title: "Notre Vision",
     description:
-      "Devenir la référence de la mobilité premium en Afrique de l'Ouest avec un service d'exception.",
+      "Devenir la référence de la mobilité au Sénégal avec un service d'exception.",
   },
   {
     tag: "MISSION",
     title: "Notre Mission",
     description:
-      "Faciliter l'accès aux véhicules de luxe avec transparence, flexibilité et excellence.",
+      "Faciliter l'accès aux véhicules avec transparence, flexibilité et excellence.",
   },
   {
     tag: "VALEURS",
@@ -160,12 +160,6 @@ export function OwnerSection() {
               {/* Overlay gradient subtil */}
               <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-charcoal)]/20 to-transparent" />
             </div>
-
-            {/* Badge flottant */}
-            {/* <div className="absolute bottom-6 left-1/2 -translate-x-1/2 lg:left-auto lg:translate-x-0 lg:-bottom-4 lg:-right-4 bg-[var(--color-orange)] text-[var(--color-cream)] px-6 py-4 rounded-2xl shadow-xl">
-              <p className="font-serif text-2xl font-bold">{owner.experience}</p>
-              <p className="text-xs tracking-widest">ANNÉES</p>
-            </div> */}
           </div>
 
           {/* Right: Message et valeurs */}
@@ -182,8 +176,8 @@ export function OwnerSection() {
               <p className="text-[var(--color-gray-200)] text-base leading-relaxed">
                 <span className="text-[var(--color-cream)] font-semibold">
                   "Depuis des années, ma passion pour l'automobile d'exception m'anime quotidiennement.
-                </span>{" "}
-                J'ai fondé B-M-N Motors avec une conviction : démocratiser l'accès aux véhicules premium tout en
+                </span>{" "} <br />
+                J'ai fondé <b>B-M-N Motors</b> avec une conviction : démocratiser l'accès aux véhicules premium tout en
                 maintenant un service digne des plus grandes enseignes. Chaque client est traité comme un membre de
                 notre famille."
               </p>

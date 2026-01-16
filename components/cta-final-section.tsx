@@ -16,8 +16,8 @@ export function CtaFinalSection() {
             <span className="italic text-[var(--color-orange)]">Véhicule de Rêve</span>
           </h2>
           <p className="text-[var(--color-gray-200)] text-lg leading-relaxed">
-            Découvrez notre sélection soigneusement choisie de véhicules premium et de luxe. Chaque voiture est livrée
-            avec un historique complet d'entretien, une garantie et notre engagement envers l'excellence.
+          Découvrez notre sélection rigoureuse de véhicules, du confort premium aux modèles haut de gamme.
+          Chaque voiture bénéficie d’un historique d’entretien vérifié, d’une garantie, et de notre exigence de qualité.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export function CtaFinalSection() {
             Prêt à Trouver Votre Véhicule Idéal ?
           </h3>
           <p className="text-lg text-[var(--color-cream)]/90 mb-8 max-w-2xl mx-auto">
-            Notre équipe est prête à vous aider à trouver et acquérir le véhicule de luxe de vos rêves.
+            Notre équipe est prête à vous aider à trouver et acquérir le véhicule de vos rêves.
           </p>
 
           {/* Single Centered CTA Button */}
