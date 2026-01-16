@@ -1,21 +1,20 @@
 export function HeroSection() {
   return (
     <section className="relative h-screen flex items-center overflow-hidden bg-[var(--color-charcoal)]">
-    {/* Background Video optimisé */}
-    <div className="absolute inset-0">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="metadata" // ✅ Charge que les métadonnées d'abord
-        className="w-full h-full object-cover opacity-50"
-        poster="/luxury-sports-car-in-dark-showroom-with-dramatic-l.jpg" // ✅ Image pendant chargement
-      >
-        <source src="/videos/hero-car.mp4" type="video/mp4" />
-      </video>
-      <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/60 via-transparent to-[var(--color-charcoal)]/80" />
-    </div>
+      {/* Background Video with Overlay */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-50"
+          poster="/videos/hero-car (1).mp4"
+        >
+          <source src="/videos/hero-car (1).mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/60 via-transparent to-[var(--color-charcoal)]/80" />
+      </div>
 
       {/* Content - Layout vertical centré */}
       <div className="relative z-10 container mx-auto px-6 h-full flex flex-col justify-between py-20">

@@ -237,16 +237,10 @@ export default function ExperiencePage() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* <img
+        <img
           src="/luxury-car-dealership-showroom-interior.jpg"
           alt="Expérience B-M-N"
           className="absolute inset-0 w-full h-full object-cover"
-        /> */}
-         <Image
-          src="/luxury-car-dealership-showroom-interior.jpg"
-          alt="Expérience B-M-N"
-          fill
-          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/90 via-[var(--color-charcoal)]/70 to-[var(--color-charcoal)]" />
 

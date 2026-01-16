@@ -311,18 +311,11 @@ export default function RentalsPage() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* <img
+        <img
           src="/luxury-sports-car-keys-on-marble-table.jpg"
           alt="Location de voitures"
           className="absolute inset-0 w-full h-full object-cover"
-        /> */}
-
-          <Image
-            src="/luxury-sports-car-keys-on-marble-table.jpg"
-            alt="Location de voitures"
-            fill
-            className="object-cover"
-          />
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/80 via-[var(--color-charcoal)]/60 to-[var(--color-charcoal)]" />
 
         <div className="relative z-10 container mx-auto px-6 text-center">
