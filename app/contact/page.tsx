@@ -18,6 +18,11 @@
 // }
 
 
+
+
+
+
+import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ContactSection } from "@/components/contact-section"
@@ -35,11 +40,18 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Image de fond */}
-        <img
+        {/* <img
           src="/bmn-logo.jpeg"
           alt="Contactez B-M-N Motors"
           className="absolute inset-0 w-full h-full object-cover"
-        />
+        /> */}
+
+        <Image
+            src="/bmn-logo.jpeg"
+            alt="Contactez B-M-N Motors"
+            fill
+            className="object-cover"
+          />
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/80 via-[var(--color-charcoal)]/60 to-[var(--color-charcoal)]" />
         

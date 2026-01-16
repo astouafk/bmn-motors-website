@@ -219,7 +219,7 @@
 
 
 
-
+import Image from "next/image"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { TrendingUp, Award, Heart, Zap, CheckCircle, Star, ArrowRight } from "lucide-react"
@@ -237,10 +237,16 @@ export default function ExperiencePage() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <img
+        {/* <img
           src="/luxury-car-dealership-showroom-interior.jpg"
           alt="Expérience B-M-N"
           className="absolute inset-0 w-full h-full object-cover"
+        /> */}
+         <Image
+          src="/luxury-car-dealership-showroom-interior.jpg"
+          alt="Expérience B-M-N"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/90 via-[var(--color-charcoal)]/70 to-[var(--color-charcoal)]" />
 
@@ -251,7 +257,7 @@ export default function ExperiencePage() {
             <br /> */}
             LE LUXE
             <br />
-            AUTOMOBILE
+            DRIVE
           </h1>
           <p className="text-[var(--color-gray-200)] text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed mb-6">
             Nous ne vendons pas simplement des voitures. Nous créons des expériences qui élèvent votre voyage.

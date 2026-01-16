@@ -704,6 +704,7 @@
 
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -766,10 +767,16 @@ function VehiculesPage() {
       {/* Hero Section */}
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Image de fond */}
-      <img
+      {/* <img
         src="/bmn-agence.png"
         alt="B-M-N Motors - Notre Flotte"
         className="absolute inset-0 w-full h-full object-cover"
+      /> */}
+      <Image
+        src="/bmn-agence.png"
+        alt="B-M-N Motors - Notre Flotte"
+        fill
+        className="object-cover"
       />
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-charcoal)]/80 via-[var(--color-charcoal)]/60 to-[var(--color-charcoal)]" />
