@@ -54,7 +54,7 @@ export default function ContactPage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Image de fond */}
         <img
-          src="/bmn-logo.jpeg"
+          src="/bmn-affiche.jpeg"
           alt="Contactez B-M-N Motors"
           className="absolute inset-0 w-full h-full object-cover"
         />
