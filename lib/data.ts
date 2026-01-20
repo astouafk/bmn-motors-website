@@ -1,3 +1,4 @@
+//lib/data.ts
 import vehiclesData from '@/data/vehicles.json'
 import configData from '@/data/config.json'
 import testimonialsData from '@/data/testimonials.json'

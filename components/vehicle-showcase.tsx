@@ -1,3 +1,5 @@
+//components/vehicle-showcase.tsx
+
 "use client"
 
 import { useState, useEffect } from "react"
@@ -150,13 +152,13 @@ export function VehicleShowcase() {
               {/* Action Buttons avec effets */}
               <div className="space-y-3">
                 <Link
-                  href={`/vehicules/${current.slug}`}
+                  href={`/voitures-location-vente-dakar/${current.slug}`}
                   className="block w-full text-center px-6 py-4 bg-[var(--color-orange)] text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-orange)]/90 hover:scale-105 transition-all duration-300 floating glow-orange"
                 >
                   VOIR LES DÉTAILS
                 </Link>
                 <Link
-                  href="/vehicules"
+                  href="/voitures-location-vente-dakar"
                   className="block w-full text-center px-6 py-4 border-2 border-[var(--color-cream)]/20 text-[var(--color-cream)] font-bold rounded-full hover:bg-[var(--color-cream)] hover:text-[var(--color-charcoal)] transition-all duration-300"
                 >
                   AUTRES OPTIONS

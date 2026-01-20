@@ -21,10 +21,28 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ContactSection } from "@/components/contact-section"
+import type { Metadata } from "next"
 
-export const metadata = {
-  title: "Contact - B-M-N Motors",
-  description: "Contactez-nous pour toute demande concernant nos véhicules premium",
+
+export const metadata: Metadata = {
+  title: "Contactez B-M-N Motors Dakar | Location & Vente Voiture Luxe",
+  description: "Besoin d'une voiture de luxe à Dakar ? Contactez-nous : +221 77 588 99 76. Réponse en 2h. Showroom ouvert 7j/7. WhatsApp disponible.",
+  keywords: "contact bmn motors, location voiture dakar telephone, whatsapp location voiture",
+  openGraph: {
+    title: "Contactez B-M-N Motors Dakar",
+    description: "Contactez-nous pour louer ou acheter une voiture de luxe à Dakar.",
+    url: "https://www.bmn-motors.com/contact",
+    siteName: "B-M-N Motors",
+    images: [
+      {
+        url: "https://www.bmn-motors.com/bmn-logo.jpeg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "fr_SN",
+    type: "website",
+  },
 }
 
 export default function ContactPage() {

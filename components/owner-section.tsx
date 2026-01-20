@@ -1,3 +1,5 @@
+//components/owner-section.tsx
+
 import Image from "next/image"
 import { getOwnerInfo } from "@/lib/data"
 
