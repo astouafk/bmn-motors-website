@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   },
 }
 
+
 export default function RentalsPage() {
   const rentalBenefits = getRentalBenefits()
   const rentalCategories = getRentalCategories()

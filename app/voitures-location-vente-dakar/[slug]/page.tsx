@@ -60,7 +60,7 @@ import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { VehicleDetails } from "@/components/vehicle-details"
-import { getVehicleBySlug, getAllVehicles, formatPrice } from "@/lib/data"
+import { getVehicleBySlug, getAllVehicles, formatPrice, type Vehicle } from "@/lib/data"
 import { getVehicleSchema, getOrganizationSchema } from "@/lib/schema"
 import Link from "next/link"
 import { ChevronLeft } from "lucide-react"
@@ -72,7 +72,7 @@ type PageProps = {
 // Métadonnées dynamiques pour chaque véhicule
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params
-  const vehicle = getVehicleBySlug(resolvedParams.slug)
+  const vehicle = await getVehicleBySlug(resolvedParams.slug)
 
   if (!vehicle) {
     return {
@@ -82,7 +82,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const priceText = formatPrice(vehicle.pricePerDay)
-  const features = vehicle.features.slice(0, 3).join(", ")
+  const features = vehicle.features && vehicle.features.length > 0 
+    ? vehicle.features.slice(0, 3).join(", ") 
+    : "Équipements premium"
 
   return {
     title: `Location ${vehicle.name} ${vehicle.year} Dakar - ${priceText}/jour | B-M-N Motors`,
@@ -109,7 +111,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function VehicleDetailsPage({ params }: PageProps) {
   const resolvedParams = await params
-  const vehicle = getVehicleBySlug(resolvedParams.slug)
+  const vehicle = await getVehicleBySlug(resolvedParams.slug)
 
   if (!vehicle) {
     return (
@@ -157,9 +159,9 @@ export default async function VehicleDetailsPage({ params }: PageProps) {
 
 // Generate static params for all vehicles
 export async function generateStaticParams() {
-  const vehicles = getAllVehicles()
+  const vehicles = await getAllVehicles()
   
-  return vehicles.map((vehicle) => ({
+  return vehicles.map((vehicle: Vehicle) => ({
     slug: vehicle.slug,
   }))
 }

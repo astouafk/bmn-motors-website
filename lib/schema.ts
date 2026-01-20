@@ -66,59 +66,64 @@ export function getOrganizationSchema() {
  * Schema.org pour un véhicule individuel
  */
 export function getVehicleSchema(vehicle: Vehicle) {
-  const config = getConfig()
-  
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    '@id': `https://www.bmn-motors.com/voitures-location-vente-dakar/${vehicle.slug}#product`,
-    name: `${vehicle.name} ${vehicle.year}`,
-    description: `${vehicle.type} ${vehicle.specs.transmission}, ${vehicle.specs.fuel}, ${vehicle.specs.seats} places. ${vehicle.features.slice(0, 3).join(', ')}.`,
-    image: `https://www.bmn-motors.com${vehicle.image}`,
-    brand: {
-      '@type': 'Brand',
-      name: vehicle.name.split(' ')[0], // Ex: "Mercedes"
-    },
-    category: vehicle.type,
-    offers: {
-      '@type': 'Offer',
-      price: vehicle.pricePerDay.toString(),
-      priceCurrency: 'XOF',
-      availability: vehicle.availability.available
-        ? 'https://schema.org/InStock'
-        : 'https://schema.org/OutOfStock',
-      priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
-        .toISOString()
-        .split('T')[0],
-      seller: {
-        '@type': 'AutomotiveBusiness',
-        name: config.business.name,
+    const config = getConfig()
+    
+    // Gestion sécurisée des features
+    const featuresText = vehicle.features && vehicle.features.length > 0 
+      ? ` ${vehicle.features.slice(0, 3).join(', ')}.` 
+      : ''
+    
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      '@id': `https://www.bmn-motors.com/voitures-location-vente-dakar/${vehicle.slug}#product`,
+      name: `${vehicle.name} ${vehicle.year}`,
+      description: `${vehicle.type} ${vehicle.specs.transmission}, ${vehicle.specs.fuel}, ${vehicle.specs.seats} places.${featuresText}`,
+      image: `https://www.bmn-motors.com${vehicle.image}`,
+      brand: {
+        '@type': 'Brand',
+        name: vehicle.name.split(' ')[0], // Ex: "Mercedes"
       },
-    },
-    additionalProperty: [
-      {
-        '@type': 'PropertyValue',
-        name: 'Transmission',
-        value: vehicle.specs.transmission,
+      category: vehicle.type,
+      offers: {
+        '@type': 'Offer',
+        price: vehicle.pricePerDay.toString(),
+        priceCurrency: 'XOF',
+        availability: vehicle.availability.available
+          ? 'https://schema.org/InStock'
+          : 'https://schema.org/OutOfStock',
+        priceValidUntil: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
+          .toISOString()
+          .split('T')[0],
+        seller: {
+          '@type': 'AutomotiveBusiness',
+          name: config.business.name,
+        },
       },
-      {
-        '@type': 'PropertyValue',
-        name: 'Carburant',
-        value: vehicle.specs.fuel,
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Nombre de places',
-        value: vehicle.specs.seats.toString(),
-      },
-      {
-        '@type': 'PropertyValue',
-        name: 'Année',
-        value: vehicle.year.toString(),
-      },
-    ],
+      additionalProperty: [
+        {
+          '@type': 'PropertyValue',
+          name: 'Transmission',
+          value: vehicle.specs.transmission,
+        },
+        {
+          '@type': 'PropertyValue',
+          name: 'Carburant',
+          value: vehicle.specs.fuel,
+        },
+        {
+          '@type': 'PropertyValue',
+          name: 'Nombre de places',
+          value: vehicle.specs.seats.toString(),
+        },
+        {
+          '@type': 'PropertyValue',
+          name: 'Année',
+          value: vehicle.year.toString(),
+        },
+      ],
+    }
   }
-}
 
 /**
  * Schema.org pour les avis clients

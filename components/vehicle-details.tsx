@@ -166,9 +166,10 @@ export function VehicleDetails({ vehicle }: VehicleDetailsProps) {
               </div>
             </div>
 
-            {/* Features */}
-            <div className="mb-8">
-              <h2 className="font-serif text-2xl font-bold text-[var(--color-cream)] mb-4">Équipements & Options</h2>
+           {/* Features */}
+           <div className="mb-8">
+            <h2 className="font-serif text-2xl font-bold text-[var(--color-cream)] mb-4">Équipements & Options</h2>
+            {vehicle.features.length > 0 ? (
               <div className="grid grid-cols-2 gap-3">
                 {vehicle.features.map((feature: string, idx: number) => (
                   <div key={idx} className="flex items-start gap-2 group">
@@ -179,8 +180,10 @@ export function VehicleDetails({ vehicle }: VehicleDetailsProps) {
                   </div>
                 ))}
               </div>
-            </div>
-
+            ) : (
+              <p className="text-[var(--color-cream)]/60 text-sm">Aucun équipement spécifié</p>
+            )}
+          </div>
             {/* Rental Conditions */}
             <div className="mb-8 p-6 bg-[var(--color-gray-900)] rounded-2xl border border-[var(--color-gray-800)]">
               <h2 className="font-serif text-2xl font-bold text-[var(--color-cream)] mb-4">Conditions de Location</h2>
@@ -200,16 +203,21 @@ export function VehicleDetails({ vehicle }: VehicleDetailsProps) {
                     )}
                   </div>
                 </div>
+              {/* Documents */}
                 <div>
                   <p className="text-sm font-semibold text-[var(--color-cream)] mb-2">Documents Requis</p>
-                  <ul className="space-y-2">
-                    {vehicle.documents.map((doc: string, idx: number) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-[var(--color-cream)]/70">
-                        <Check size={16} className="text-[var(--color-orange)] mt-0.5 flex-shrink-0" />
-                        {doc}
-                      </li>
-                    ))}
-                  </ul>
+                  {vehicle.documents.length > 0 ? (
+                    <ul className="space-y-2">
+                      {vehicle.documents.map((doc: string, idx: number) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-[var(--color-cream)]/70">
+                          <Check size={16} className="text-[var(--color-orange)] mt-0.5 flex-shrink-0" />
+                          {doc}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-[var(--color-cream)]/60 text-sm">À définir lors de la réservation</p>
+                  )}
                 </div>
               </div>
             </div>
