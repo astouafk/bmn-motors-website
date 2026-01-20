@@ -1,0 +1,11 @@
+<!-- // app/sitemap-index.ts (optionnel, pas nécessaire pour l'instant)
+import { MetadataRoute } from 'next'
+
+export default function sitemapIndex(): MetadataRoute.Sitemap {
+  return [
+    {
+      url: 'https://www.bmn-motors.com/sitemap.xml',
+      lastModified: new Date(),
+    },
+  ]
+} -->
