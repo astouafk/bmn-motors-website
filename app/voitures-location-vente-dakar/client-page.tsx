@@ -817,6 +817,7 @@ export default function VehiculesClientPage({
                   >
                     <option>Tout</option>
                     <option>Pétrole</option>
+                    <option>Pétrole</option>
                     <option>Diesel</option>
                     <option>Hybride</option>
                   </select>
