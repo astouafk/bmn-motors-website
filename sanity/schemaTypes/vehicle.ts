@@ -48,13 +48,13 @@ export const vehicleType = defineType({
       name: 'pricePerDay',
       title: 'Prix par jour (FCFA)',
       type: 'number',
-      validation: (Rule) => Rule.required().min(0),
+      validation: (Rule) => Rule.min(0),
     }),
     defineField({
       name: 'securityDeposit',
       title: 'Caution (FCFA)',
       type: 'number',
-      validation: (Rule) => Rule.required().min(0),
+      validation: (Rule) => Rule.min(0),
     }),
     defineField({
       name: 'sale',
