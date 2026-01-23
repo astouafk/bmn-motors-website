@@ -106,7 +106,7 @@ export const vehicleType = defineType({
           title: 'Carburant',
           type: 'string',
           options: {
-            list: ['Essence', 'Diesel', 'Hybride', 'Électrique'],
+            list: ['Pétrole', 'Diesel', 'Hybride', 'Électrique'],
           },
         },
         {

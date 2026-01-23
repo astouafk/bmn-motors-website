@@ -816,7 +816,7 @@ export default function VehiculesClientPage({
                     className="w-full px-4 py-3 bg-[var(--color-charcoal)] text-[var(--color-cream)] border border-[var(--color-gray-800)] rounded-lg focus:outline-none focus:border-[var(--color-orange)] transition-all"
                   >
                     <option>Tout</option>
-                    <option>Essence</option>
+                    <option>Pétrole</option>
                     <option>Diesel</option>
                     <option>Hybride</option>
                   </select>
