@@ -365,10 +365,18 @@ export interface Vehicle {
   name: string
   type: string
   year: number
-  pricePerDay: number
-  securityDeposit: number
+  // pricePerDay: number
+  // securityDeposit: number
+  // sale?: {
+  //   price: number
+  //   currency?: string
+  //   available: boolean
+  // }
+  pricePerDay?: number | null
+  securityDeposit?: number | null
+
   sale?: {
-    price: number
+    price?: number | null
     currency?: string
     available: boolean
   }
@@ -480,17 +488,40 @@ export async function getAllVehicles(): Promise<Vehicle[]> {
 /**
  * Normalise un véhicule Sanity (convertit null en tableaux vides)
  */
+// function normalizeVehicle(vehicle: any): Vehicle {
+//   return {
+//     ...vehicle,
+//     id: vehicle._id || vehicle.id,
+//     slug: normalizeSlug(vehicle.slug),
+//     features: vehicle.features || [],           // ← FIX
+//     documents: vehicle.documents || [],         // ← FIX
+//     gallery: vehicle.gallery || [],             // ← FIX
+//     sale: vehicle.sale || { available: false, price: 0 }, // ← FIX
+//   }
+// }
+
 function normalizeVehicle(vehicle: any): Vehicle {
   return {
     ...vehicle,
     id: vehicle._id || vehicle.id,
     slug: normalizeSlug(vehicle.slug),
-    features: vehicle.features || [],           // ← FIX
-    documents: vehicle.documents || [],         // ← FIX
-    gallery: vehicle.gallery || [],             // ← FIX
-    sale: vehicle.sale || { available: false, price: 0 }, // ← FIX
+
+    pricePerDay: vehicle.pricePerDay ?? null,
+    securityDeposit: vehicle.securityDeposit ?? null,
+
+    sale: vehicle.sale
+      ? {
+          available: vehicle.sale.available ?? false,
+          price: vehicle.sale.price ?? null,
+        }
+      : { available: false, price: null },
+
+    features: vehicle.features || [],
+    documents: vehicle.documents || [],
+    gallery: vehicle.gallery || [],
   }
 }
+
 
 
 /**
@@ -750,9 +781,21 @@ export function getCategoryById(id: string) {
 // UTILITY
 // ==========================================
 
-export function formatPrice(price: number): string {
-  return `${price.toLocaleString('fr-FR')} FCFA`
+// export function formatPrice(price: number): string {
+//   return `${price.toLocaleString('fr-FR')} FCFA`
+// }
+
+export function formatPrice(
+  price?: number | null,
+  fallback = "Prix sur demande"
+): string {
+  if (typeof price !== "number") {
+    return fallback
+  }
+
+  return `${price.toLocaleString("fr-FR")} FCFA`
 }
+
 
 export function getWhatsAppLink(message: string): string {
   const config = getConfig()
