@@ -493,7 +493,7 @@ export function getHomePageSchema() {
 }
 
 /**
- * Schema.org pour la liste des véhicules (ItemList)
+ * Schema.org pour la liste des véhicules (ItemList)!!!
  * ✅ Gestion des véhicules sans prix
  */
 export function getVehicleListSchema(vehicles: Vehicle[]) {
