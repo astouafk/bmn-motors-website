@@ -42,7 +42,7 @@ export const vehicleType = defineType({
       name: 'year',
       title: 'Année',
       type: 'number',
-      validation: (Rule) => Rule.required().min(2020).max(2030),
+      validation: (Rule) => Rule.required().min(2000).max(2030),
     }),
     defineField({
       name: 'pricePerDay',
